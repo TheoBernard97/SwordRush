@@ -131,6 +131,10 @@ img {
   display: none;
 }
 
+.replay {
+  margin-bottom: 25px;
+}
+
 /*--- MAP ---*/
 
 .map {

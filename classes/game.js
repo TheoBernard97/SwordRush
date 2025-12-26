@@ -8,7 +8,7 @@ import BattleLogic from "./battleLogic.js";
 
 class Game {
   constructor() {
-    const mapSize = 10;
+    const mapSize = 15;
     const numberOfRocks = 20;
     // 4 Weapons
     // 2 Players
@@ -31,6 +31,9 @@ class Game {
       if (event.target.classList.contains("reachable-cell")) {
         this.map.updatePlayerCoordinates(event.srcElement.attributes[0].value);
         this.researchPhase();
+      }
+      if (event.target.classList.contains("replay")) {
+        location.reload();
       }
     });
   }
